@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editFirst"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSecond"
+        android:layout_below="@+id/editFirst"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="doSomethingAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:layout_below="@+id/editSecond"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:onClick="doSomethingSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub"
+        android:id="@+id/subButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_toEndOf="@+id/addButton" />
+
+    <Button
+        android:onClick="doSomethingMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mul"
+        android:id="@+id/mulButton"
+        android:layout_alignBottom="@+id/subButton"
+        android:layout_toRightOf="@+id/subButton"
+        android:layout_toEndOf="@+id/subButton" />
+
+    <Button
+        android:onClick="doSomethingDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Div"
+        android:id="@+id/divButton"
+        android:layout_alignBottom="@+id/mulButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/tvResult"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/subButton"
+        android:layout_toLeftOf="@+id/mulButton"
+        android:layout_toStartOf="@+id/mulButton"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

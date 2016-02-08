@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter First Number"
+        android:layout_height="wrap_content"
+        android:id="@+id/etFirstNumber" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter Second Number"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSecondNumber"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:onClick="doCalculation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnAdd" />
+
+    <Button
+        android:onClick="doCalculation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnSub" />
+
+    <Button
+        android:onClick="doCalculation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/btnMul" />
+
+    <Button
+        android:onClick="doCalculation"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/btnDiv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:id="@+id/tv"
+        android:textSize="35dp"
+        android:gravity="center"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView" />
+
+</LinearLayout>
